@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -r dist; tsc && copyfiles -u 1 src/**/*.css src/**/*.json src/**/*.png src/**/*.webp src/**/*.html src/**/*.hbs src/**/*.mp3 src/**/*.wav src/**/*.otf src/**/*.woff2 src/**/*.ttf src/**/*.gif dist/ && copyfiles README.md dist/"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "keywords": [
     "RPG",
@@ -14,8 +15,14 @@
   "author": "taragnor",
   "license": "",
   "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.0",
     "@types/jquery": "^3.5.29",
     "copyfiles": "^2.4.1",
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.92.1",
     "typescript": "^5.3.3"
   }
 }
